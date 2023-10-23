@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <head>
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" href="styles/contact.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="left-section">
+          <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        </div>
+        <div class="middle-section">
+          <img class="explore" src="icons/explore.svg">
+          <img class="library" src="icons/library.svg">
+        </div>
+        <div class="right-section">
+          <img class="notifications" src="icons/notifications.svg">
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <h1>Parrllax Effect (Scroll Down)</h1>
+    </section>
+     
+    <section class="parallax-container">
+      <div class="parallax" style="background: url(media/pexels-willfried-wendefotoblend-5185446.jpg) center center / 100% 100% no-repeat;"></div>
+    </section>
+     
+    <section class="content"></section>
+    <section class="parallax-container">
+      <div class="parallax" style="background: url(media/pexels-op-12166201.jpg) center center / cover no-repeat;"></div>
+    </section>
+     
+    <section class="content"></section>
+    <section class="parallax-container">
+      <div class="parallax" style="background: url(media/pexels-matthias-6702448.jpg) center center / cover no-repeat;"></div>
+    </section>
+  </body>
+ 
+ 
+<script>
+var parallaxElements = $('.parallax'),
+    parallaxQuantity = parallaxElements.length;
+ 
+$(window).on('scroll', function () {
+ 
+  window.requestAnimationFrame(function () {
+ 
+    for (var i = 0; i < parallaxQuantity; i++) {
+      var currentElement =  parallaxElements.eq(i);
+      var scrolled = $(window).scrollTop();
+         
+        currentElement.css({
+          'transform': 'translate3d(0,' + scrolled * -0.15 + 'px, 0)'
+        });
+ 
+    }
+  });
+ 
+});
+</script>
+ 
+</html>

@@ -1,0 +1,33 @@
+.content {
+  background: #000000;
+  height: 75vh;
+ 
+  display: flex; /* added display flex */
+  align-items: center;
+  justify-content: center; /* added justify-content center */
+  color: #ffffff;
+}
+ 
+.parallax-container {
+  position: relative;
+  height: 500px;
+}
+ 
+.parallax {
+  position: absolute;
+  height: 200%;
+  width: 100%;
+  z-index: -1;
+}
+
+.parallax {
+  background: url(media/pexels-julia-fuchs-12312763.jpg) center center / cover no-repeat;
+}
+
+.parallax {
+  background: url(media/pexels-lalesh-aldarwish-169976.jpg) center center / cover no-repeat;
+}
+
+.parallax {
+  background: url(media/pexels-life-of-pix-33961.jpg) center center / cover no-repeat;
+} 
