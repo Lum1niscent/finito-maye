@@ -1,6 +1,6 @@
 .content {
-  background: #000000;
-  height: 75vh;
+  background: transparent;
+  height: 70vh;
  
   display: flex; /* added display flex */
   align-items: center;
